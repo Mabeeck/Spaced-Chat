@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "spaced-chat",
+	"version": "${version}",
+	"name": "Spaced Chat",
+	"description": "Disables chat normalizing to allow consecutive spaces and spaces at the beginning and end of a message.",
+	"authors": [
+		"Mabeeck"
+	],
+	"contact": {
+	},
+	"license": "The Unlicense",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"mabeeck.spacedchat.SpacedChat"
+		]
+	},
+	"mixins": [
+		"spaced-chat.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21"
+	},
+	"suggests": {
+	}
+}
