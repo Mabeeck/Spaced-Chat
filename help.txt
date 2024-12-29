@@ -1,0 +1,17 @@
+This is a reminder to myself from myself that way I won't have to suffer again
+
+Java 21 or 22 required to compile for 1.21.x (Java 23 is incompatible)
+Delete properties file in ./gradle/
+Configure Java version in ./build.gradle
+For support of versions 1.20.x and 1.19.x compile for one of these versions with Java 17 (Configure this in ./gradle.properties)
+Java 22 files cannot be launched from the normal launcher! Compile with an older version.
+If implementing support for new minecraft version make sure to also update ./src/main/resources/fabric.mod.json
+
+Test in the actual minecraft launcher before uploading!
+
+List of gradle commands:
+
+gradlew genSources
+gradlew runClient
+gradlew runServer
+gradlew build
